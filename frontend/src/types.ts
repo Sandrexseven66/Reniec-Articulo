@@ -1,0 +1,2 @@
+export type Envelope = {version: number; issuer: string; payload: Record<string, any>; signature: string; public_key: string; qr_image?: string; qr_version?: number; payload_bytes?: number};
+export type Issued = {credential: Record<string, any>; payload_hash: string; signature: string; public_key: string; envelope: Envelope; qr_image: string; final_image: string; share_a: string; share_b: string; steganographic_image: string; issuance_ms: number};
